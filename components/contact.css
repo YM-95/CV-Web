@@ -12,6 +12,8 @@ h1 {
     width: 50%;
     margin: auto;
     text-align: center;
+    color: #acbef0;
+    font-size: 40px;
 }
 
 .basic-info {
@@ -61,4 +63,9 @@ h1 {
     border-radius: 1rem;
     font-size: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.button-box :hover {
+    color: #2860c2;
+    background-color: floralwhite;
 }
