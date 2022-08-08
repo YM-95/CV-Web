@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Roboto:wght@100;300&display=swap');
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(/assets/background2.jpg);
+    object-fit: cover;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 0 2px 0 0;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+a:hover {
+    color: #FBB454;
+}
+
+.nav-list li>a::after {
+    content: '';
+    position: absolute;
+    background-color: #A6D1E6;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.1s;
+
+}
+
+li a:hover:after {
+    width: 100%;
+
+    background-color: #FBB454;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+.nav-item {
+    margin-right: 100px;
+    list-style: none;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo-item:first-child {
+    list-style: none;
+    margin-right: auto;
+    margin-left: 100px;
+
+}
+
+.top-nav img {
+    width: 8vw;
+    height: 16vh;
+}
+
+.container {
+    margin-left: 8rem;
+    margin-top: 6rem;
+}
+
+.container h1 {
+    font-size: 50px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.container h1 span {
+    margin-left: 1rem;
+    font-size: 50px;
+    color: orange;
+}
+
+.container p {
+    color: #555;
+}
+
+.container a {
+    text-decoration: none;
+    background-color: #212121;
+    padding: 10px 18px;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+}
+
+.phone-info h3 {
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+.email-info h3 {
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+.social-info h3 {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.author {
+    margin: 0;
+    background-color: brown;
+    text-align: center;
+}
+
+.author h3 {
+    padding-top: 10px;
+    margin-bottom: 1rem;
+}
+
+.author h2 {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+
+.social-info span a {
+    margin-left: 10px;
+}
