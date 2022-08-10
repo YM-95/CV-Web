@@ -16,27 +16,51 @@
         <nav class="top-nav">
             <ul class="nav-list">
                 <li class="logo-item"><img src="assets/logo3.png" alt="logo"></li>
-                <li class="nav-item"><a href="/" onclick="route()">Home</a></li>
+                <li class="nav-item"><a href="/">Home</a></li>
                 <li class="nav-item"><a href="https://github.com/YM-95" target="_blank">Projects</a></li>
-                <li class=" nav-item"><a href="/contact" onclick="route()">Contact</a></li>
+                <li class=" nav-item"><a href="#contact-form">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main id="main-page"></main>
-    <!-- <footer>
+    <section class="container">
+        <h1>I` am Yordan<span>Manolov</span></h1>
+        <p>
+            This is my official portfolio website.
+        </p>
+        <a href="/assets/IT-CV2.pdf" download>Download CV
+        </a>
+    </section>
+    <form id="contact-form" type="submit" action="https://formsubmit.co/e4c3d5f7ba6d158c2c9be8488ff50451" method="POST">
+        <h1>Contact Form</h1>
+        <input type="text" name="_honey" style="display:none">
+        <input type="hidden" name="_captcha" value="false">
+        <div class="basic-info">
+            <div class="name-field"><input type="text" name="name" placeholder="Name:"> </div>
+
+            <div class="company-field"> <input type="text" name="company" placeholder="Company:"> </div>
+            <div class="email-field"> <input type="email" name="email" placeholder="Email:"> </div>
+            <div class="textarea-box">
+                <textarea class="comments" name="message" placeholder="Enter a message..." rows="6"></textarea>
+            </div>
+            <div class="button-box">
+                <button>SUBMIT</button>
+            </div>
+        </div>
+    </form>
+    <footer>
         <div class="footer-container">
             <div class="social-info">
-                <h2>Follow Me:</h2>
-                <span><a href="https://github.com/YM-95"><i class="fa-brands fa-github fa-xl"></i></a></span>
-                <span><a href="https://www.linkedin.com/in/yordan-manolov-043b42206/"><i
+                <span>Follow me:</span>
+                <span><a href="https://github.com/YM-95" target="_blank"><i
+                            class="fa-brands fa-github fa-xl"></i></a></span>
+                <span><a href="https://www.linkedin.com/in/yordan-manolov-043b42206/" target="_blank"><i
                             class="fa-brands fa-linkedin fa-xl"></i></a></span>
             </div>
             <div class="author">
-                <h3>Created by:</h3>
                 <h2>&copy;Yordan Manolov</h2>
             </div>
         </div>
-    </footer> -->
+    </footer>
     <script src="/app.js"></script>
 </body>
 
