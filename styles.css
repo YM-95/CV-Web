@@ -4,7 +4,7 @@
 body {
     margin: 0;
     box-sizing: border-box;
-    background-image: url(/background2.jpg);
+    background-image: url(./assets/background2.JPG);
     background-size: cover;
 }
 
@@ -17,9 +17,20 @@ a {
     position: relative;
 }
 
-a:hover {
-    color: #acbef0;
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
 }
+
+.nav-item {
+    margin-right: 100px;
+    list-style: none;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
 
 .nav-list li>a::after {
     content: '';
@@ -38,33 +49,23 @@ li a:hover:after {
     background-color: #acbef0;
 }
 
-.nav-list {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-    padding: 1rem;
+a:hover {
+    color: #acbef0;
 }
 
 
-.nav-item {
-    margin-right: 100px;
-    list-style: none;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-}
 
 .logo-item:first-child {
     list-style: none;
     margin-right: auto;
     margin-left: 100px;
-
 }
 
-.top-nav img {
+.logo-item img {
     width: 8vw;
     height: 16vh;
 }
+
 
 .container {
     margin-left: 8rem;
@@ -151,7 +152,6 @@ form h1 {
 .basic-info div {
     width: 50%;
     margin: 1rem auto;
-
 }
 
 .basic-info div input {
@@ -160,7 +160,6 @@ form h1 {
     border-radius: 1rem;
     border: 0;
     text-indent: 30px;
-
 }
 
 .comments {
@@ -196,4 +195,211 @@ form h1 {
     color: #2860c2;
     background-color: floralwhite;
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .logo-item:first-child {
+        list-style: none;
+        margin-left: 20px;
+    }
+
+    .logo-item img {
+        width: 18vw;
+        height: 14vh;
+    }
+
+    .nav-item {
+        margin-right: 20px;
+    }
+
+    .container {
+        margin-top: 3rem;
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .container h1 span {
+        display: block;
+        text-align: center;
+        font-size: 50px;
+        color: orange;
+    }
+
+    .container p {
+        text-align: center;
+    }
+
+    .container a {
+        padding: 15px 30px;
+    }
+
+    form h1 {
+        width: 60%;
+    }
+
+    .basic-info {
+        width: 100%;
+    }
+
+    .basic-info div {
+        width: 70%;
+        margin: 1rem auto;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .social-info {
+        margin-right: 0px;
+    }
+}
+
+@media (min-width:481px) and (max-width:680px) {
+
+    .logo-item:first-child {
+        list-style: none;
+        margin-left: 20px;
+    }
+
+    .logo-item img {
+        width: 16vw;
+        height: 14vh;
+    }
+
+    .nav-item {
+        margin-right: 20px;
+    }
+
+    .container {
+        margin-top: 3rem;
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .container h1 span {
+        display: block;
+        text-align: center;
+        font-size: 50px;
+        color: orange;
+    }
+
+    .container p {
+        text-align: center;
+    }
+
+    .container a {
+        padding: 15px 30px;
+    }
+
+    form h1 {
+        width: 60%;
+    }
+
+    .basic-info {
+        width: 100%;
+    }
+
+    .basic-info div {
+        width: 70%;
+        margin: 1rem auto;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .social-info {
+        margin-right: 0px;
+    }
+}
+
+@media (min-width:680px) and (max-width:1024px) {
+    .logo-item:first-child {
+        list-style: none;
+        margin-left: 20px;
+    }
+
+    .logo-item img {
+        width: 14vw;
+        height: 16vh;
+    }
+
+    .nav-item {
+        margin-right: 40px;
+    }
+
+    .container {
+        margin-top: 3rem;
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .container h1 span {
+        display: block;
+        text-align: center;
+        font-size: 50px;
+        color: orange;
+    }
+
+    .container p {
+        text-align: center;
+    }
+
+    .container a {
+        padding: 15px 30px;
+    }
+
+    form h1 {
+        width: 60%;
+    }
+
+    .basic-info {
+        width: 100%;
+    }
+
+    .basic-info div {
+        width: 70%;
+        margin: 1rem auto;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .social-info {
+        margin-right: 0px;
+    }
 }
